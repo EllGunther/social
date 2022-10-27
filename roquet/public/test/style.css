@@ -1,0 +1,102 @@
+#corp div{
+    position: absolute;
+}
+#corp{
+    position: fixed;
+    width: 35vh;
+    height: 50vh;
+    top: 60%;
+    left: 50%;
+    background: rgb(90, 78, 78);
+    transform: translate(-50% , 0%);
+    transform: scale(3.5);
+}
+#tete{
+    width: 5vh;
+    height: 6vh;
+    /*background: #000;*/
+    left: 48.7%;
+    transform: translate(-50% , 0%);
+    top: 0.57vh;
+    border-radius: 1em;
+}
+#tete svg{
+    width: auto;
+    height: 110%;
+}
+#pek svg{
+    width: auto;
+    height: 100%;
+}
+#cou{
+    width: 1.9vh;
+    height: 2.5vh;
+    left: 50.5%;
+    transform: translate(-50% , 0%);
+    top: 6.2vh;
+}
+#cou svg{
+    width: 100%;
+    height: 100%;
+}
+#pek{
+    left: 52.5%;
+    transform: translate(-50% , 0%);
+    width: 9vh;
+    height: 5vh;
+    border-radius: 1em;
+    top: 7.35vh;
+}
+#ventre{
+    top: 12vh;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    width: 6vh;
+    height: 5.5vh;
+    border-radius: 0.3em;
+}
+#bassin{
+    left: 50%;
+    transform: translate(-50% , 0%);
+    background: rgb(0, 0, 0);
+    top: 16.2vh;
+    width: 4.9vh;
+    height: 2.5vh;
+}
+#biseps, #biseps2{
+    transform-origin: 50% 20%;
+    transform-box: fill-box;
+    transform: rotate(0deg);
+    width: 2vh;
+    height: 4vh;
+    top: 9.4vh;
+}
+#biseps, #main{
+    left: 13.3vh;
+}
+#biseps2, #main2{
+    left: 19.8vh;
+}
+#avBras{
+    left: 13vh;
+    transform-origin: 50% 20%;
+    transform-box: fill-box;
+    transform: rotate(-10deg);
+}
+#avBras2{
+    left: 19.8vh;
+    transform-origin: 50% 20%;
+    transform-box: fill-box;
+    transform: rotate(0deg);
+}
+#avBras, #avBras2{
+    width: 2vh;
+    height: 5.5vh;
+    top: 14.8vh;
+}
+#main, #main2{
+    width: 1.5vh;
+    height: 2vh;
+    background: rgb(38, 133, 1);
+    top: 23.5vh;
+}

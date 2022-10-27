@@ -1,0 +1,197 @@
+#main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    outline: none;
+    transition: 0.2s;
+    display: flex;
+    border: rgb(88, 88, 88) solid 1px;
+    border-radius: 0.2em;
+    width: 42.5vh;
+    height: 3vh;
+    font-size: 15px;
+    margin: 5px;
+}
+#feuil{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+form{
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+    height: 25vh;
+    background: rgba(255, 255, 255, 0.822);
+    border-radius: 0.3em;
+}
+.feuille{
+    width: 1.2vh;
+    height: 1.2vh;
+    border-radius: 50%;
+    background: rgb(241, 199, 199);
+    opacity: 70%;
+    z-index: 3;
+    position: absolute;
+    animation-name: tombe;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes tombe{
+    0%{top: 0%;}
+    100%{top: 135%;}
+}
+input:focus{
+    outline-color: #006effd8;
+    outline-style: double;
+}
+#cont{
+    width: 42.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+#connecter,#connect{
+    display: flex;
+    width: 20.6vh;
+    height: 4.3vh;
+    border-radius: 0.35em;
+    background: linear-gradient(45deg, #9c27b0, #0cdceb);
+    color: white;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#cree{
+    display: flex;
+    width: 20vh;
+    height: 4vh;
+    border-radius: 0.35em;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border: rgb(49, 49, 49) solid 1px;
+    padding: 0;
+    color: #2e2e2e;
+    cursor: pointer;
+}
+#cree:hover{
+    filter: brightness(120%);
+}
+#connect:hover{
+    filter: brightness(120%);
+}
+#connecter:hover{
+    filter: brightness(120%);
+}
+#ajouter{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#retour{
+    position: fixed;
+    top: 1vh;
+    left: 3%;
+    z-index: 10;
+    background: rgba(211, 53, 53, 0.89);
+    border-radius: 0.5em;
+    width: 4vh;
+    height: 4vh;
+}
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    width: 100%;
+    /*background-image: url('../images/eren.png');*/
+}
+#train, #trainM{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    z-index: 1; 
+}
+#image, #photo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    z-index: 0;
+}
+img{
+    transition: 0.4s;
+}
+.slide{
+    animation-name: roule;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: 0.4s;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@keyframes roule {
+    0%{left: 0%;}
+    100%{left: -10%;}
+}
+@media only screen and (orientation: portrait){
+    .slide{
+        width: 250%;
+        height: 100%;
+    }
+    #image{
+        visibility: hidden;
+    }
+    #photo{
+        visibility: visible;
+    }
+    #train{
+        visibility: hidden;
+    }
+    #trainM{
+        visibility: visible;
+    }
+}
+@media only screen and (orientation: landscape){
+    .slide{
+        width: 110%;
+        height: 105%;
+    }
+    #image{
+        visibility: visible;
+    }
+    #photo{
+        visibility: hidden;
+    }
+    #train{
+        visibility: visible;
+    }
+    #trainM{
+        visibility: hidden;
+    }
+}
